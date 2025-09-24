@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Negbepierre • Portfolio</title>
+  <title>Inegbenose Pierre • Portfolio</title>
   <style>
     body {
       margin: 0;
@@ -31,76 +31,120 @@
       margin: 40px auto;
       padding: 0 20px;
     }
-    .btn {
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007acc;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #007acc;
+    }
+    .card a {
       display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
       background: #007acc;
       color: white;
-      padding: 12px 24px;
+      padding: 8px 14px;
       border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 20px 0;
+      font-size: 0.9rem;
       transition: background 0.3s;
     }
-    .btn:hover {
+    .card a:hover {
       background: #005c99;
-    }
-    .projects {
-      display: none;
-      margin-top: 20px;
-    }
-    .projects ul {
-      list-style: none;
-      padding: 0;
-    }
-    .projects li {
-      margin: 10px 0;
-      background: #fff;
-      border: 1px solid #eee;
-      padding: 12px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .projects a {
-      text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Negbepierre</h1>
-    <p>Information Technology Professional passionate about <br>
+    <h1>Inegbenose Pierre</h1>
+    <p>Information Technology Professional passionate about<br>
        <strong>Cloud Engineering</strong> & <strong>Artificial Intelligence</strong></p>
   </header>
 
   <div class="container">
-    <a href="#" class="btn" onclick="toggleProjects()">📂 My Projects</a>
-
-    <div class="projects" id="projects-list">
-      <ul>
-        <li><a href="/docs/legendary-aws-ai-lex1.pdf" target="_blank">Legendary AWS – Lex 1</a></li>
-        <li><a href="/docs/legendary-aws-ai-lex2.pdf" target="_blank">Legendary AWS – Lex 2</a></li>
-        <li><a href="/docs/legendary-aws-ai-lex3.pdf" target="_blank">Legendary AWS – Lex 3</a></li>
-        <li><a href="/docs/legendary-aws-compute-eks2.pdf" target="_blank">AWS Compute – EKS 2</a></li>
-        <li><a href="/docs/legendary-aws-compute-eks3.pdf" target="_blank">AWS Compute – EKS 3</a></li>
-        <li><a href="/docs/legendary-aws-compute-eks4.pdf" target="_blank">AWS Compute – EKS 4</a></li>
-        <li><a href="/docs/legendary-aws-devops-github.pdf" target="_blank">DevOps – GitHub Automation</a></li>
-        <li><a href="/docs/legendary-aws-host-a-website-on-s3.pdf" target="_blank">Hosting a Website on S3</a></li>
-        <li><a href="/docs/legendary-aws-security-iam.pdf" target="_blank">AWS Security – IAM</a></li>
-        <!-- Add more project links here following the same pattern -->
-      </ul>
+    <h2>📂 My AWS Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Legendary AWS – AI Agent Nocode</h3>
+        <a href="/docs/legendary-ai-agent-nocode.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>Legendary AI – LLM DeepSeek</h3>
+        <a href="/docs/legendary-ai-llm-deepseek.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>Legendary AWS – Lex 1</h3>
+        <a href="/docs/legendary-aws-ai-lex1.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>Legendary AWS – Lex 2</h3>
+        <a href="/docs/legendary-aws-ai-lex2.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>Legendary AWS – Lex 3</h3>
+        <a href="/docs/legendary-aws-ai-lex3.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS Compute – EB</h3>
+        <a href="/docs/legendary-aws-compute-eb.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS Compute – ECR</h3>
+        <a href="/docs/legendary-aws-compute-ecr.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS Compute – EKS 2</h3>
+        <a href="/docs/legendary-aws-compute-eks2.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS Compute – EKS 3</h3>
+        <a href="/docs/legendary-aws-compute-eks3.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS Compute – EKS 4</h3>
+        <a href="/docs/legendary-aws-compute-eks4.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS DevOps – Code Artifact</h3>
+        <a href="/docs/legendary-aws-devops-code-artifact.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS DevOps – GitHub</h3>
+        <a href="/docs/legendary-aws-devops-github.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS DevOps – VS Code</h3>
+        <a href="/docs/legendary-aws-devops-vscode.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>Host a Website on S3</h3>
+        <a href="/docs/legendary-aws-host-a-website-on-s3.pdf" target="_blank">View PDF</a>
+      </div>
+      <div class="card">
+        <h3>AWS Security – IAM</h3>
+        <a href="/docs/legendary-aws-security-iam.pdf" target="_blank">View PDF</a>
+      </div>
     </div>
   </div>
-
-  <script>
-    function toggleProjects() {
-      const list = document.getElementById("projects-list");
-      list.style.display = (list.style.display === "block") ? "none" : "block";
-    }
-  </script>
 
 </body>
 </html>
