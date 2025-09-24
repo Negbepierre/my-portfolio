@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Negbepierre • Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(120deg, #007acc, #00c3ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #007acc;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 20px 0;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #005c99;
+    }
+    .projects {
+      display: none;
+      margin-top: 20px;
+    }
+    .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+    .projects li {
+      margin: 10px 0;
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .projects a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Negbepierre</h1>
+    <p>Information Technology Professional passionate about <br>
+       <strong>Cloud Engineering</strong> & <strong>Artificial Intelligence</strong></p>
+  </header>
+
+  <div class="container">
+    <a href="#" class="btn" onclick="toggleProjects()">📂 My Projects</a>
+
+    <div class="projects" id="projects-list">
+      <ul>
+        <li><a href="/docs/legendary-aws-ai-lex1.pdf" target="_blank">Legendary AWS – Lex 1</a></li>
+        <li><a href="/docs/legendary-aws-ai-lex2.pdf" target="_blank">Legendary AWS – Lex 2</a></li>
+        <li><a href="/docs/legendary-aws-ai-lex3.pdf" target="_blank">Legendary AWS – Lex 3</a></li>
+        <li><a href="/docs/legendary-aws-compute-eks2.pdf" target="_blank">AWS Compute – EKS 2</a></li>
+        <li><a href="/docs/legendary-aws-compute-eks3.pdf" target="_blank">AWS Compute – EKS 3</a></li>
+        <li><a href="/docs/legendary-aws-compute-eks4.pdf" target="_blank">AWS Compute – EKS 4</a></li>
+        <li><a href="/docs/legendary-aws-devops-github.pdf" target="_blank">DevOps – GitHub Automation</a></li>
+        <li><a href="/docs/legendary-aws-host-a-website-on-s3.pdf" target="_blank">Hosting a Website on S3</a></li>
+        <li><a href="/docs/legendary-aws-security-iam.pdf" target="_blank">AWS Security – IAM</a></li>
+        <!-- Add more project links here following the same pattern -->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleProjects() {
+      const list = document.getElementById("projects-list");
+      list.style.display = (list.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
